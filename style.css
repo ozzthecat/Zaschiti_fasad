@@ -1,117 +1,285 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 10px 20px;
-    padding: 0;
 }
 
-
-:root{
-    --accent-color: #E4881E;
-    --basic-color: #667085;
+:root {
+    --main-color: #E4881E;
+    --secondary-color: #667085;
+    --main-font: 'Inter', sans-serif;
+    --margin: 10px 70px 0 70px;
 }
 
-li, a, button{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none !important;
-}
-
-h1{
-    font-family: 'Inter', sans-serif !important;
+.main-title {
+    font-family: var(--main-font) !important;
     font-weight: 700 !important;
     font-size: 36px !important;
 }
 
-h2{
+.secondary-title {
     font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
     font-size: 16px !important;
-    color: var(--accent-color) !important;
+    color: var(--main-color) !important;
 }
 
-.head{
+.general-font-style {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    color: var(--secondary-color) !important;
+}
+
+.head {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin: var(--margin)
 }
 
-.logo{
+.logo {
     cursor: pointer;
 }
 
-.nav__links{
+.nav-item {
     list-style: none;
+    display: inline;
 }
 
-.nav__links li{
-    display: inline-block;
+.nav-links {
     padding: 0px 20px;
-    color: var(--basic-color);
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    font-size: 18px;
 }
 
-.nav__links a{
-    color: var(--basic-color);
+.nav-links:hover {
+    color: #353941 !important;
 }
 
-.apply-button{
-    background-color: var(--accent-color);
-    color: #fff;
-    padding: 9px 25px;
-    border-radius: 10px;
-    cursor: pointer;
+.apply-button {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    padding: 9px 25px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    font-size: 18px;
 }
 
-.main-page{
+.header-button-margin {
+    margin-left: auto;
+}
+
+.main-page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 96px 0px 96px 0px;
+    padding: 100px 0 0 0;
+    margin: var(--margin);
 }
 
-.main-info{
+.main-info {
     Width: 576px;
     height: 382px;
 }
 
-.main-info p{
+.main-info p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--basic-color);
-
+    margin-bottom: 40px;
 }
 
-.main-pic{
+.main-pic {
     position: static;
     width: 576px;
     height: 496px;
     border-radius: 100px;
 }
 
-.gallery{
-    display: flex;
-    flex-direction: column;
+.divider {
+    color: var(--secondary-color) !important;
+    margin: 100px 70px 100px 70px;
 }
 
-.gallery-info p{
+.gallery {
+    margin: var(--margin);
+}
+
+.gallery-info {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+}
+
+.d-block {
+    height: 540px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 70px 0 70px;
+}
+
+.stage-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.stage-info_item {
+    max-width: 30%;
+}
+
+.stage-title {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
 }
 
-.d-block{
-    height: 540px;
-    margin: auto;
+.stage-main-font {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: var(--secondary-color) !important;
 }
 
-.carousel-control-next-icon{
-    color: black;
+.certificates {
+    margin: 100px 70px 100px 70px;
 }
 
-.Stages{
+.container-fluid {
+    background-color:#F9FAFB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.apply-description {
+    margin: 100px 70px 0 70px;
+}
+
+.apply-items {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin: var(--margin);
+}
+
+.application__form {
+    background-color: white;
+    height: 520px;
+    width: 416px;
+    padding: 24px;
+    border-radius: 12px;
+    
+}
+
+.form__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+.form__subtitle {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: var(--secondary-color) !important;
+}
+
+.form-group__label {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
+.form-group__input {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color:#98A2B3 !important;
+}
+
+.form__button {
+    padding: 9px 118px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: white !important;
+    background-color: var(--main-color) !important;
+    border-style: none !important;
+}
+
+.data__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 20%;
+}
+
+.data_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 20%;
+}
+
+/* почему отображается другой шрифт? */
+.data__title {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 60px !important;
+    color: var(--main-color) !important;
+}
+
+.data__subtitle {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+.data__description {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: var(--secondary-color) !important;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: var(--margin);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.footer__font {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #98A2B3 !important;
+}
+
+.contacts {
 
 }
